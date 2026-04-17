@@ -1,7 +1,7 @@
-import { MemoryWorkflowAuditRepository } from '@/server/repositories/memory';
-import { PostgresWorkflowAuditRepository } from '@/server/repositories/postgres';
-import type { WorkflowAuditRepository } from '@/server/repositories/types';
-import { getServerEnv } from '@/server/env';
+import { MemoryWorkflowAuditRepository } from '../repositories/memory';
+import { PostgresWorkflowAuditRepository } from '../repositories/postgres';
+import type { WorkflowAuditRepository } from '../repositories/types';
+import { getServerEnv } from '../env';
 import { seedDemoRepository } from './demo';
 
 let memoryRepository: WorkflowAuditRepository | null = null;

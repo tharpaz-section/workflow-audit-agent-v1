@@ -10,7 +10,7 @@ import type {
   WorkflowAuditResult,
   WorkflowAuditState,
   WorkflowConnection,
-} from '@/lib/contracts';
+} from '../../lib/contracts';
 import {
   coverageSummarySchema,
   criticalGapSchema,
@@ -20,9 +20,9 @@ import {
   orgIntelligenceSchema,
   orgSignalsSchema,
   roleImpactSchema,
-} from '@/lib/contracts';
-import { getRoleTemplate } from '@/server/agents/prompts';
-import type { StoredRun } from '@/server/repositories/types';
+} from '../../lib/contracts';
+import { getRoleTemplate } from '../agents/prompts';
+import type { StoredRun } from '../repositories/types';
 
 function uniq(values: string[]) {
   return [...new Set(values.map((value) => value.trim()).filter(Boolean))];

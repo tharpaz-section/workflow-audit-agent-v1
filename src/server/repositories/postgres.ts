@@ -1,6 +1,6 @@
 import { and, asc, desc, eq } from 'drizzle-orm';
-import type { OrgIntelligence, WorkflowAuditResult } from '@/lib/contracts';
-import { getDb } from '@/server/db/client';
+import type { OrgIntelligence, WorkflowAuditResult } from '../../lib/contracts';
+import { getDb } from '../db/client';
 import {
   workflowAuditConnectionsTable,
   workflowAuditMessagesTable,
@@ -8,7 +8,7 @@ import {
   workflowAuditResultsTable,
   workflowAuditRunsTable,
   workflowAuditTasksTable,
-} from '@/server/db/schema';
+} from '../db/schema';
 import type {
   StoredConnection,
   StoredMessage,

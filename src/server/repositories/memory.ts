@@ -1,5 +1,5 @@
 import { randomUUID } from 'node:crypto';
-import type { OrgIntelligence, WorkflowAuditResult } from '@/lib/contracts';
+import type { OrgIntelligence, WorkflowAuditResult } from '../../lib/contracts';
 import type {
   StoredConnection,
   StoredMessage,

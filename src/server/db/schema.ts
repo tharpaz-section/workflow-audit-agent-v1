@@ -13,7 +13,7 @@ import type {
   WorkflowAuditResult,
   WorkflowAuditState,
   WorkflowConnection,
-} from '@/lib/contracts';
+} from '../../lib/contracts';
 
 export const workflowAuditRunsTable = pgTable('workflow_audit_runs', {
   id: uuid('id').primaryKey(),

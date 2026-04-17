@@ -1,5 +1,5 @@
-import type { InterviewBrief, RunProfile, TeamPattern, WorkflowAuditState } from '@/lib/contracts';
-import type { StoredMessage } from '@/server/repositories/types';
+import type { InterviewBrief, RunProfile, TeamPattern, WorkflowAuditState } from '../../lib/contracts';
+import type { StoredMessage } from '../repositories/types';
 
 export function getRoleTemplate(roleTitle: string) {
   const role = roleTitle.toLowerCase();

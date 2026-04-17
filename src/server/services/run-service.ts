@@ -7,15 +7,15 @@ import type {
   TeamPattern,
   WorkflowAuditResult,
   WorkflowAuditState,
-} from '@/lib/contracts';
+} from '../../lib/contracts';
 import {
   answerPayloadSchema,
   createRunResponseSchema,
   interviewStateSchema,
-} from '@/lib/contracts';
+} from '../../lib/contracts';
 import { buildAdminSummary } from './admin';
 import { seedDemoRepository } from './demo';
-import { runInterviewAgent, runRecommendationAgent, runWorkflowSpecialist, buildInitialState } from '@/server/agents/openai';
+import { runInterviewAgent, runRecommendationAgent, runWorkflowSpecialist, buildInitialState } from '../agents/openai';
 import { buildInterviewBrief, buildOrgIntelligenceSnapshot, buildRoleImpact } from './org-intelligence';
 import { getPriorPatterns } from './patterns';
 import { getRepository } from './repository';

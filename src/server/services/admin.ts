@@ -5,9 +5,9 @@ import type {
   OrgIntelligence,
   WorkflowAuditResult,
   WorkflowOpportunity,
-} from '@/lib/contracts';
-import { adminSummarySchema } from '@/lib/contracts';
-import type { WorkflowAuditRepository } from '@/server/repositories/types';
+} from '../../lib/contracts';
+import { adminSummarySchema } from '../../lib/contracts';
+import type { WorkflowAuditRepository } from '../repositories/types';
 import { buildOrgIntelligenceSnapshot } from './org-intelligence';
 import { buildTeamPatternsFromRuns } from './patterns';
 

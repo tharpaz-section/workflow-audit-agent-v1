@@ -1,5 +1,5 @@
-import type { TeamPattern, WorkflowAuditState } from '@/lib/contracts';
-import type { StoredRun, WorkflowAuditRepository } from '@/server/repositories/types';
+import type { TeamPattern, WorkflowAuditState } from '../../lib/contracts';
+import type { StoredRun, WorkflowAuditRepository } from '../repositories/types';
 
 function normalize(values: string[]) {
   return [...new Set(values.map((value) => value.trim()).filter(Boolean))];
