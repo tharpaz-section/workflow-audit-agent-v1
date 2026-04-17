@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Goga';
+  src: url('/fonts/goga/Goga-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Goga';
+  src: url('/fonts/goga/Goga-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Azurio';
+  src: url('/fonts/azurio/Azurio-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Azurio';
+  src: url('/fonts/azurio/Azurio-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Crayonize';
+  src: url('/fonts/crayonize/Crayonize-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Crayonize';
+  src: url('/fonts/crayonize/Crayonize-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
