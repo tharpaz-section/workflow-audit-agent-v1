@@ -5,11 +5,11 @@ import type {
   OrgIntelligence,
   WorkflowAuditResult,
   WorkflowOpportunity,
-} from '../../lib/contracts';
-import { adminSummarySchema } from '../../lib/contracts';
-import type { WorkflowAuditRepository } from '../repositories/types';
-import { buildOrgIntelligenceSnapshot } from './org-intelligence';
-import { buildTeamPatternsFromRuns } from './patterns';
+} from '../../lib/contracts.js';
+import { adminSummarySchema } from '../../lib/contracts.js';
+import type { WorkflowAuditRepository } from '../repositories/types.js';
+import { buildOrgIntelligenceSnapshot } from './org-intelligence.js';
+import { buildTeamPatternsFromRuns } from './patterns.js';
 
 function toHeatScore(opportunity: WorkflowOpportunity) {
   return Math.max(15, Math.min(100, Math.round(opportunity.estimatedHoursSaved * 4)));

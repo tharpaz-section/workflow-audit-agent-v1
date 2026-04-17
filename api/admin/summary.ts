@@ -1,5 +1,5 @@
-import { getAdmin } from '../../src/server/services/run-service';
-import { allowMethods, handleApiError, sendJson } from '../_utils';
+import { getAdmin } from '../../src/server/services/run-service.js';
+import { allowMethods, handleApiError, sendJson } from '../_utils.js';
 
 export default async function handler(req: any, res: any) {
   if (req.method !== 'GET') {

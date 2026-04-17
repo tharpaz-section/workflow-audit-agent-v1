@@ -7,18 +7,18 @@ import type {
   TeamPattern,
   WorkflowAuditResult,
   WorkflowAuditState,
-} from '../../lib/contracts';
+} from '../../lib/contracts.js';
 import {
   answerPayloadSchema,
   createRunResponseSchema,
   interviewStateSchema,
-} from '../../lib/contracts';
-import { buildAdminSummary } from './admin';
-import { seedDemoRepository } from './demo';
-import { runInterviewAgent, runRecommendationAgent, runWorkflowSpecialist, buildInitialState } from '../agents/openai';
-import { buildInterviewBrief, buildOrgIntelligenceSnapshot, buildRoleImpact } from './org-intelligence';
-import { getPriorPatterns } from './patterns';
-import { getRepository } from './repository';
+} from '../../lib/contracts.js';
+import { buildAdminSummary } from './admin.js';
+import { seedDemoRepository } from './demo.js';
+import { runInterviewAgent, runRecommendationAgent, runWorkflowSpecialist, buildInitialState } from '../agents/openai.js';
+import { buildInterviewBrief, buildOrgIntelligenceSnapshot, buildRoleImpact } from './org-intelligence.js';
+import { getPriorPatterns } from './patterns.js';
+import { getRepository } from './repository.js';
 
 function nowIso() {
   return new Date().toISOString();

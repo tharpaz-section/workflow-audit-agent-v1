@@ -1,6 +1,6 @@
-import { submitAnswer } from '../../../src/server/services/run-service';
-import { answerPayloadSchema } from '../../../src/lib/contracts';
-import { getQueryParam, allowMethods, handleApiError, parseJsonBody, sendJson } from '../../_utils';
+import { submitAnswer } from '../../../src/server/services/run-service.js';
+import { answerPayloadSchema } from '../../../src/lib/contracts.js';
+import { getQueryParam, allowMethods, handleApiError, parseJsonBody, sendJson } from '../../_utils.js';
 
 export default async function handler(req: any, res: any) {
   if (req.method !== 'POST') {

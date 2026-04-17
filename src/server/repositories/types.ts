@@ -4,7 +4,7 @@ import type {
   TeamPattern,
   WorkflowAuditResult,
   WorkflowAuditState,
-} from '../../lib/contracts';
+} from '../../lib/contracts.js';
 
 export type StoredRun = {
   id: string;

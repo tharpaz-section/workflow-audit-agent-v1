@@ -10,7 +10,7 @@ import type {
   TeamPattern,
   WorkflowAuditResult,
   WorkflowAuditState,
-} from '../../lib/contracts';
+} from '../../lib/contracts.js';
 import {
   interviewTurnResponseSchema,
   roleImpactSchema,
@@ -18,17 +18,17 @@ import {
   workflowAuditResultSchema,
   workflowConnectionSchema,
   workflowSpecialistOutputSchema,
-} from '../../lib/contracts';
-import { getServerEnv } from '../env';
+} from '../../lib/contracts.js';
+import { getServerEnv } from '../env.js';
 import {
   buildInitialAssistantMessage,
   buildInterviewSystemPrompt,
   buildRecommendationPrompt,
   buildSpecialistPrompt,
   getRoleTemplate,
-} from './prompts';
-import type { StoredMessage } from '../repositories/types';
-import { buildRoleImpact } from '../services/org-intelligence';
+} from './prompts.js';
+import type { StoredMessage } from '../repositories/types.js';
+import { buildRoleImpact } from '../services/org-intelligence.js';
 
 const openAiQuestionOptionSchema = z.object({
   id: z.string(),

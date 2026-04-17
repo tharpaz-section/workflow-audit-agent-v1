@@ -1,12 +1,12 @@
 import { randomUUID } from 'node:crypto';
-import type { OrgIntelligence, WorkflowAuditResult } from '../../lib/contracts';
+import type { OrgIntelligence, WorkflowAuditResult } from '../../lib/contracts.js';
 import type {
   StoredConnection,
   StoredMessage,
   StoredRun,
   StoredTask,
   WorkflowAuditRepository,
-} from './types';
+} from './types.js';
 
 function clone<T>(value: T): T {
   return structuredClone(value);

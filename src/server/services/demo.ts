@@ -7,9 +7,9 @@ import type {
   WorkflowAuditState,
   WorkflowConnection,
   WorkflowOpportunity,
-} from '../../lib/contracts';
-import type { WorkflowAuditRepository } from '../repositories/types';
-import { buildInterviewBrief, buildRoleImpact } from './org-intelligence';
+} from '../../lib/contracts.js';
+import type { WorkflowAuditRepository } from '../repositories/types.js';
+import { buildInterviewBrief, buildRoleImpact } from './org-intelligence.js';
 
 const DEMO_COMPANY = 'Section Demo Co';
 const DEMO_TEAM = 'RevOps';

@@ -1,8 +1,8 @@
-import { MemoryWorkflowAuditRepository } from '../repositories/memory';
-import { PostgresWorkflowAuditRepository } from '../repositories/postgres';
-import type { WorkflowAuditRepository } from '../repositories/types';
-import { getServerEnv } from '../env';
-import { seedDemoRepository } from './demo';
+import { MemoryWorkflowAuditRepository } from '../repositories/memory.js';
+import { PostgresWorkflowAuditRepository } from '../repositories/postgres.js';
+import type { WorkflowAuditRepository } from '../repositories/types.js';
+import { getServerEnv } from '../env.js';
+import { seedDemoRepository } from './demo.js';
 
 let memoryRepository: WorkflowAuditRepository | null = null;
 let seeded = false;

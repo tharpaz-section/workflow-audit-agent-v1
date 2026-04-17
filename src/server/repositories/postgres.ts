@@ -1,6 +1,6 @@
 import { and, asc, desc, eq } from 'drizzle-orm';
-import type { OrgIntelligence, WorkflowAuditResult } from '../../lib/contracts';
-import { getDb } from '../db/client';
+import type { OrgIntelligence, WorkflowAuditResult } from '../../lib/contracts.js';
+import { getDb } from '../db/client.js';
 import {
   workflowAuditConnectionsTable,
   workflowAuditMessagesTable,
@@ -8,14 +8,14 @@ import {
   workflowAuditResultsTable,
   workflowAuditRunsTable,
   workflowAuditTasksTable,
-} from '../db/schema';
+} from '../db/schema.js';
 import type {
   StoredConnection,
   StoredMessage,
   StoredRun,
   StoredTask,
   WorkflowAuditRepository,
-} from './types';
+} from './types.js';
 
 function requireDb() {
   const db = getDb();

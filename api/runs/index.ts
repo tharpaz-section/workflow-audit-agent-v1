@@ -1,6 +1,6 @@
-import { createRun } from '../../src/server/services/run-service';
-import { createRunRequestSchema } from '../../src/lib/contracts';
-import { allowMethods, handleApiError, parseJsonBody, sendJson } from '../_utils';
+import { createRun } from '../../src/server/services/run-service.js';
+import { createRunRequestSchema } from '../../src/lib/contracts.js';
+import { allowMethods, handleApiError, parseJsonBody, sendJson } from '../_utils.js';
 
 export default async function handler(req: any, res: any) {
   if (req.method !== 'POST') {
